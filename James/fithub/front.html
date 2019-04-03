@@ -1,81 +1,55 @@
 <html>
 <link href='front.css' rel='stylesheet'>
-<html>
 
 <head>
-    <title>
-        MY page
-    </title>
-    <style>
-        header {
-            display: inline-block;
-            background-color: black;
-            overflow: auto;
-            padding-left: 25px;
-            padding-right: 25px;
-
-        }
-
-        .logo {
-            float: left;
-            display: inline-block;
-            background-color: red;
-            color: white;
-            margin-right: 25px;
-        }
-
-        .leftMenu {
-            float: left;
-            display: inline-block;
-            background-color: blue;
-        }
-
-        .leftMenu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .leftMenu ul li {
-            display: inline-block;
-            padding: 20px
-        }
-
-        .rightMenu {
-            float: right;
-            display: inline-block;
-            background-color: yellow;
-        }
-    </style>
+    <title>Account Page</title>
 </head>
 
-<body>
-    <div id="header">
-        <div calss="logo">Logo</div>
-        <div class="leftMenu">
-            <ul>
-                <li>
-                    <a href="home.html">browser</a>
-                </li>
-                <lil>
-                    <a href="home.html">dvd</a>
-                </lil>
-                <lil>
-                    <a href="fit.html">kids</a>
-                </lil>
-
-            </ul>
-        </div><br/>
-        <div class="rightMenu">right menu</div>
-    </div>
-    <div id="large Image">
-        <h5>small title</h5>
-        <h1>large title</h1>
-        <h3>medium</h3>
-        <p>SpiffUp>SpiffUp>SpiffUp>SpiffUp>SpiffUpSpiffUp>SpiffUp>SpiffUp>SpiffUp>SpiffUp</p>
-        <div>Button 1</div>
-        <div>Button 2</div>
-    </div>
-</body>
-
 </html>
+
+<body>
+
+    <h2>Become a Member</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
