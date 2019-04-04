@@ -1,18 +1,19 @@
 html, body { 
   background-color: whitesmoke;
+  background: url(fancy\ closet.jpg) no-repeat center center fixed;
 }
 
 
 .jumbotron{
-   color: lightgreen;
-    background: url(closet\ 2.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 520px;
+   color: whitesmoke;
+    background-size: 30%;
+    background-color: teal;
+    height: 400px;
     background-blend-mode: auto;
-    background-rendering: crisp-edges;
+    background-blend-mode: crisp-edges;
     image-rendering: pixelated;
-    padding: 30px;
-    margin: 0px;
+    padding: 50px;
+    margin: 30px;
   }
   
   body {
