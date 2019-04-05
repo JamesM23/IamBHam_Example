@@ -1,24 +1,24 @@
-html, body { 
+html,  { 
   background-color: whitesmoke;
   background: url(fancy\ closet.jpg) no-repeat center center fixed;
+ 
 }
 
 
 .jumbotron{
    color: whitesmoke;
-    background-size: 30%;
+    background-size: 50%;
     background-color: teal;
     height: 400px;
-    background-blend-mode: auto;
-    background-blend-mode: crisp-edges;
-    image-rendering: pixelated;
-    padding: 50px;
-    margin: 30px;
+    /* padding: 20px; */
+    margin: 5px;
+    background: url(spiff.png)no-repeat top center fixed;
   }
   
   body {
-    margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
+    background-color: teal;
   }
   
   .topnav {
@@ -28,7 +28,7 @@ html, body {
   
   .topnav a {
     float: center;
-    color:black;
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -54,4 +54,10 @@ html, body {
     align-content: center;
     text-align: center;
   }
-
+  .collapse{
+    background-color: black;
+    border: white;
+  }
+ footer{
+   height: 20%;
+ }
